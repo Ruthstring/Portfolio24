@@ -16,8 +16,10 @@ export default {
         },
 
         boxShadow: {
-          'custom-pink': '0 4px 6px rgba(255,105,135,0.5)',
           'custom-blue': '0 4px 6px #8290f0',
+          'custom-pink': '0 4px 6px #e6affc',
+          
+          
         },
 
       },

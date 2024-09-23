@@ -237,3 +237,25 @@ h3{
   font-size:30px;
 }
   
+
+/*PROJECT1*/
+.project-media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-img {
+  transition: all 0.5s ease;
+  
+}
+
+.project-img:hover {
+  z-index: 30;
+  transform: translate(0, 0) scale(1.1); /* Make the hovered image move and scale */
+}
+
+.project-img:not(:hover) {
+  z-index: 10;
+}
+
