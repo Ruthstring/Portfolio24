@@ -36,6 +36,84 @@
   padding-bottom:60px;
 }
 
+.button-grey{
+  background-color: var(--background-color-dark);
+  border: solid 4px;
+  font:bolder;
+  
+}
+
+/*NAVBAR*/
+@keyframes popOut {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.pop-out {
+  animation: popOut 0.5s ease-out forwards;
+}
+
+/* Explosion Animation */
+.explosion-container {
+  position: fixed;
+  z-index: 50;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff5722; /* Base color of the dots */
+  animation: explode 0.8s forwards ease-out;
+  opacity: 1;
+}
+
+.dot-1 {
+  background-color: #ff5722;
+  top: 0;
+  left: 0;
+}
+
+.dot-2 {
+  background-color: #ffeb3b;
+  top: 0;
+  right: 0;
+}
+
+.dot-3 {
+  background-color: #4caf50;
+  bottom: 0;
+  left: 0;
+}
+
+.dot-4 {
+  background-color: #2196f3;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50px, -50px) scale(2);
+    opacity: 0;
+  }
+}
+
 /*HERO SECTION*/
 
 .hero-section {
@@ -52,7 +130,7 @@
 .circular-text-container {
   position: absolute;
   bottom: 150px; /* Position it in the bottom-right corner */
-  right: 40px;
+  left: 40px;
   width: 80px; 
   height:80px;
 }
