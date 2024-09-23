@@ -28,6 +28,9 @@
   
  
 }
+p{
+  font-size: 20px;
+}
 
 .container {
   max-width: 1500px; /* Or any width you prefer */
