@@ -8,6 +8,8 @@ const Projects =()=>{
         <div className="container ">
            
         <Project1 />
+        </div>
+        <div>
         <Project2 />
         </div>
         </>
