@@ -10,7 +10,7 @@ const Projects =()=>{
            
         <Project1 />
         </div>
-        <div>
+        <div className="container pt-20" >
         <Project2 />
         </div>
         </>
