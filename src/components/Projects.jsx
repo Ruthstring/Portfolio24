@@ -5,7 +5,8 @@ import Project2 from "./Project2";
 const Projects =()=>{
     return(
         <>
-        <div className="container ">
+        <div><h1 className="text-6xl">Projects</h1></div>
+        <div className="container pt-20">
            
         <Project1 />
         </div>

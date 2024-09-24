@@ -91,13 +91,15 @@ const Project1 = () => {
         <h1 className="text-3xl font-bold mb-4 text-left">LoveTravel App</h1>
 
         <div className="flex flex-col text-left">
+         
+          <br />
+          <div className="column-left-medium flex p-3">
+          <div className="w-1/2">
           <p>
             Search your countries. Save your pictures. Create and print your
             personalized World map.
           </p>
-          <br />
-          <div className="column-left-medium flex p-3">
-            <div className="w-1/2">
+           
             <div className="app-features text-left ">
               <p className="font-bold"> • Full-stack app</p>
               <p> • SQL Database</p>
@@ -137,17 +139,19 @@ const Project1 = () => {
         </div>
         </div>
  {/* Image Layout for Medium Screens */}
- <div className="flex flex-col place-items-end mr-4">
+ <div className="flex flex-col  mr-4 w-2/3">
+      <div className="xl:flex">
         <img
           src={Img2}
           alt="Image Map"
-          className="w-[90%] -mb-28 transform z-10 "
+          className="relativew-[80%] -mb-28 transform z-10 "
         />
         <img
           src={Img1}
           alt="Image Mobile"
-          className="w-[60%] -mt-28 transform translate-x-20 -translate-y-14 z-30"
+          className=" w-[60%] -mt-28 transform translate-x-60 -translate-y-14 z-30"
         />
+        </div>
       </div>
       </div>
       </div>
@@ -162,9 +166,13 @@ const Project1 = () => {
 
   // Renders the layout for large screens
   const renderLargeScreenLayout = () => (
-    <div className="section-container flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 p-6 h-screen">
-      <div className="project-text">
-        <h1 className="text-3xl font-bold mb-4 text-left lg:ml-4">LoveTravel App</h1>
+    <>
+    <div className="section-container flex flex-col md:flex-row  justify-between space-y-6 md:space-y-0 lg:mt-14  ">
+    <div className="project-text">
+      <h1 className="text-6xl font-bold mb-4 text-left lg:ml-4">LoveTravel App</h1>
+      
+      
+        
 
         <div className="flex flex-col space-y-2 text-left lg:ml-4 ">
           <p>
@@ -209,6 +217,7 @@ const Project1 = () => {
           </a>
         </div>
       </div>
+      
 
       {/* Image Layout for Large Screens */}
       <div className="project-media md:relative flex flex-col md:flex-row  md:justify-center items-center lg:mr-4">
@@ -216,19 +225,20 @@ const Project1 = () => {
           <img
             src={Img2}
             alt="Image Map"
-            className="project-img shadow-md md:absolute bottom-10 right-0 w-[80%] h-auto transform translate-x-10 -translate-y-10 transition-transform duration-700 ease-in-out z-0"
+            className="project-img shadow-md md:absolute  bottom-6 right-0 md:w-[90%] h-auto transform translate-x-10 -translate-y-10 transition-transform duration-700 ease-in-out z-0"
           />
           <img
             src={Img1}
             alt="Image Mobile"
-            className="project-img md:absolute top-20 left-0 w-[55%] h-auto transform -translate-x-10 translate-y-10 transition-transform duration-700 ease-in-out z-10"
+            className="project-img md:relative top-20 left-0 md:w-[50%] h-auto transform -translate-x-10 -translate-y-0 transition-transform duration-700 ease-in-out z-10"
           />
         </div>
       </div>
     </div>
+    </>
   );
 
-  // Decide which layout to render based on screen width
+  // Decides which layout to render based on screen width
   if (windowWidth < 768) {
     return renderSmallScreenLayout();
   } else if (windowWidth >= 768 && windowWidth < 1024) {
@@ -237,5 +247,6 @@ const Project1 = () => {
     return renderLargeScreenLayout();
   }
 };
+
 
 export default Project1;
