@@ -13,22 +13,7 @@ import './index.css';
 function App() {
   const contactSectionRef = useRef(null); 
 
-  const Contact = (
-    <div 
-      ref={contactSectionRef} // Refers to this contact section
-      className="contact-section" // Optional: Add any class or styling
-      style={{
-        padding: '4rem 0',
-        backgroundColor: '#f9f9f9',
-        textAlign: 'center',
-      }}
-    >
-      <Contact /> {/* Your Contact component */}
-    </div>
-  );
-
-
-
+  
   return (
     <>
       <Router>
