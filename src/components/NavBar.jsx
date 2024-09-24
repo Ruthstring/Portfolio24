@@ -15,32 +15,60 @@ const NavBar = ({ contactSectionRef }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Track scroll position and hide the contact button in the Contact section
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY;
       setScrollPosition(scrollPos);
-
+  
       // Get the navbar height to check when it disappears
       const navbarHeight = navbarRef.current?.offsetHeight || 0;
       setIsNavVisible(scrollPos <= navbarHeight);
-
+  
       // Check if the contact section is visible
-      const contactTop = contactSectionRef?.current?.offsetTop || 0;
-      const windowHeight = window.innerHeight;
-
-      if (scrollPos + windowHeight >= contactTop + 425) {
-        setIsInContactSection(true);
-      } else {
-        setIsInContactSection(false);
+      if (contactSectionRef?.current) {
+        const contactTop = contactSectionRef.current.offsetTop || 0;
+        const windowHeight = window.innerHeight;
+  
+        if (scrollPos + windowHeight >= contactTop + 425) {
+          setIsInContactSection(true);
+        } else {
+          setIsInContactSection(false);
+        }
       }
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [contactSectionRef]);
+
+  // Track scroll position and hide the contact button in the Contact section
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPos = window.scrollY;
+  //     setScrollPosition(scrollPos);
+
+  //     // Get the navbar height to check when it disappears
+  //     const navbarHeight = navbarRef.current?.offsetHeight || 0;
+  //     setIsNavVisible(scrollPos <= navbarHeight);
+
+  //     // Check if the contact section is visible
+  //     const contactTop = contactSectionRef?.current?.offsetTop || 0;
+  //     const windowHeight = window.innerHeight;
+
+  //     if (scrollPos + windowHeight >= contactTop + 425) {
+  //       setIsInContactSection(true);
+  //     } else {
+  //       setIsInContactSection(false);
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, [contactSectionRef]);
 
   return (
     <>

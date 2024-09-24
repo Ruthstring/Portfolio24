@@ -25,7 +25,7 @@ const Project2 = () => {
     <div className="section-container flex flex-col md:flex-row justify-between space-y-6 md:space-y-0 lg:mt-40">
       {/* Text Section */}
       <div className="project-text w-full md:w-1/3">
-        <h1 className="lg:absolute text-6xl font-bold mb-4 text-left lg:ml-4">Donut e-commerce</h1>
+        <h1 className="lg:absolute text-3xl lg:text-6xl font-bold mb-4 text-left lg:ml-4">Donut e-commerce</h1>
 
         <div className="flex flex-col space-y-10 text-left lg:ml-4  ">
           <div className="lg:mt-20">
@@ -74,7 +74,7 @@ const Project2 = () => {
       </div>
 
       {/* Slider Section */}
-      <div className="project-media w-full md:w-2/3 lg:w-4/5 pt-20 md:pl-12 lg:pl-32 md:pl-20 lg:pl-48 flex justify-center items-center relative md:h-96">
+      <div className="project-media w-full md:w-2/3 lg:w-4/5 pt-20 md:pl-20 lg:pl-48 flex justify-center items-center relative md:h-96">
         {/* Map through images and position them */}
         {images.map((image, index) => {
           const isActive = index === activeIndex;
@@ -87,9 +87,9 @@ const Project2 = () => {
               src={image.src}
               alt={image.alt}
               className={`absolute transition-transform transform duration-1000 ease-in-out
-                ${isActive ? "scale-125 z-30 opacity-100" : "scale-85 opacity-50 brightness-50"}
-                ${isLeft ? "translate-x-[-100px] md:translate-x-[-220px] z-20" : ""}
-                ${isRight ? "translate-x-[100px] md:translate-x-[220px] z-20" : ""}
+                 ${isActive ? "scale-125 z-30 opacity-100" : "scale-85 opacity-50"}
+                 ${isLeft ? "translate-x-[-100px] md:translate-x-[-220px] z-20" : ""}
+                 ${isRight ? "translate-x-[100px] md:translate-x-[220px] z-20" : ""}
               `}
               style={{
                 width: isActive ? "50%" : "40%",

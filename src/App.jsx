@@ -6,15 +6,27 @@ import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import MoreText from "./components/MoreText";
 
 import './index.css'; 
 
 function App() {
   const contactSectionRef = useRef(null); 
 
+  const Contact = (
+    <div 
+      ref={contactSectionRef} // Refers to this contact section
+      className="contact-section" // Optional: Add any class or styling
+      style={{
+        padding: '4rem 0',
+        backgroundColor: '#f9f9f9',
+        textAlign: 'center',
+      }}
+    >
+      <Contact /> {/* Your Contact component */}
+    </div>
+  );
 
-const About = () => <div className="h-screen bg-purple-500">About</div>;
-const Contact = () => <div className="h-screen bg-teal-500">Contact</div>;
 
 
   return (
@@ -24,7 +36,9 @@ const Contact = () => <div className="h-screen bg-teal-500">Contact</div>;
         <Hero />
         <Technologies />
         <Projects />
+        <MoreText />
         <About />
+        
         <div ref={contactSectionRef}>
           <Contact />
         </div>
