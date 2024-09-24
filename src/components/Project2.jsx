@@ -87,7 +87,7 @@ const Project2 = () => {
               src={image.src}
               alt={image.alt}
               className={`absolute transition-transform transform duration-1000 ease-in-out
-                ${isActive ? "scale-125 z-30 opacity-100" : "scale-85 opacity-50"}
+                ${isActive ? "scale-125 z-30 opacity-100" : "scale-85 opacity-50 brightness-50"}
                 ${isLeft ? "translate-x-[-100px] md:translate-x-[-220px] z-20" : ""}
                 ${isRight ? "translate-x-[100px] md:translate-x-[220px] z-20" : ""}
               `}
