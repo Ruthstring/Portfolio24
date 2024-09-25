@@ -1,18 +1,19 @@
-import React from "react"
+import React from "react";
+import HeroImg from "../assets/Hero_Img.png"
 
 
 
 const Hero=()=>{
   
     return(
-     <div className="container hero-section h-screen bg-primary ">
+     <div style={{ height: 'calc(100vh - 64px)' }} className="container hero-section h-screen bg-primary ">
         
-            <p className="best-title text-6xl md:text-8xl font-bold  mb-12">
+            <p className="best-title md:leading-10 lg:leading-none  absolute  lg:bottom-32 left-0 w-full h-full font-bold text-[30vw] md:text-[40vw] lg:text-[15vw] flex items-center justify-center text-opacity-10 z-0">
                 Web
-                <br/>
-                 Developer
+                Developer
                  
             </p>
+            <img src={HeroImg} className=" hero-img absolute bottom-0 md:w-[1050px] "/>
 
              {/* Circular text in the bottom-right corner */}
                 <div className="circular-text-container">

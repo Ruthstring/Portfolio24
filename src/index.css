@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Kooka-light-expanded'; /* Replace with the name of your font */
+  src: url('./assets/fonts/kooka-light-expanded.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #root {
   /* max-width: 1280px; */
   margin: 0 auto;
@@ -32,12 +39,18 @@ p{
   font-size: 20px;
 }
 
-.container {
-  max-width: 1500px; /* Or any width you prefer */
-  max-height: 1000px;
-  margin: 0 auto; /* This centers the container */
-  padding-bottom:60px;
+.container{
+ max-width: 100%;
+ padding-left:3%;
+ padding-right: 3%;
 }
+
+/* .container {
+  max-width: 1500px; 
+  max-height: 1000px;
+  margin: 0 auto; 
+  padding-bottom:60px;
+} */
 
 .button-grey{
   background-color: var(--background-color-dark);
@@ -47,6 +60,9 @@ p{
 }
 
 /*NAVBAR*/
+.nav-bar{
+  background-color: #d5d8db;
+}
 @keyframes popOut {
   0% {
     transform: scale(1);
@@ -69,20 +85,25 @@ p{
 
 /*HERO SECTION*/
 
-.hero-section {
 
+.best-title{
+  font-family:"Kooka-light-expanded";
+  
+}
+.hero-section {
   position: relative;
   height: 100vh; /* Full viewport height for the hero */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #d5d8db;
   text-align: center;
 }
 
+
 .circular-text-container {
   position: absolute;
-  bottom: 150px; /* Position it in the bottom-right corner */
+  bottom: 90px; /* Position it in the bottom-right corner */
   left: 40px;
   width: 80px; 
   height:80px;
