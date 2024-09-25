@@ -23,8 +23,9 @@
   --accent-color: #e6affc;       
   --text-color: BLACK;          
   --background-color: #f8f9fa;    
-
-  /*margin*/
+  --primary-gradient: linear-gradient(to right, #d9d9d9, #96a3fa);
+ 
+ 
 
 }
 
@@ -33,8 +34,12 @@
   padding: 0;
   box-sizing: border-box;
   
- 
 }
+
+h1{
+  font-family:"Kooka-light-expanded",
+}
+
 p{
   font-size: 20px;
 }
@@ -145,6 +150,11 @@ text {
 
 
 /*TECNOLOGIES*/
+.tech-title{
+  margin-top: 3%;
+  font-weight: bold;
+  font-size:50px;
+}
 .container {
   perspective: 1000px;
 }
@@ -188,7 +198,8 @@ text {
   z-index: 1;}
 
   .flip-other{
-    background-color: #e6affc;
+    /* background-color: #e6affc; */
+    background-color: #d5d8db;
   }
 
   @keyframes slow-spin {
@@ -250,6 +261,7 @@ h3{
 
 /* Style the scrolling text */
 .carousel-text {
+  font-family: "kooka-light-expanded";
   display: inline-block;
   text-transform: uppercase;
   font-size: 3.5rem;
@@ -257,7 +269,7 @@ h3{
   white-space: nowrap;
   margin-top: 50px;
   animation: scroll-text 60s linear infinite;
-  letter-spacing: 0.1rem; /* Spacing between letters */
+  letter-spacing: 0.1rem;
   color: #d5d8db;
   /* Repeat the text to ensure it fills the space */
   width: max-content; /* Ensures the text can overflow beyond container */

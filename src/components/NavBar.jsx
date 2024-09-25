@@ -83,7 +83,7 @@ const NavBar = ({ contactSectionRef }) => {
                 </HashLink>
               </li>
               <li className="menu-item">
-                <HashLink smooth to="/#contact" className="text-gray-800 hover:text-gray-400 text-xl">
+                <HashLink smooth to="/#contact" className="text-secondary hover:text-black text-xl font-bold">
                   Contact
                 </HashLink>
               </li>

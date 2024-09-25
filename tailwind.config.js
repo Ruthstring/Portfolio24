@@ -13,6 +13,7 @@ export default {
         },
         backgroundImage: {
           'custom-gradient': 'linear-gradient(to right, #e6affc, #ffe577)',
+          "custom-gradient2":"var(--primary-gradient)",
         },
 
         boxShadow: {
