@@ -17,9 +17,9 @@ const Project1 = () => {
   }, []);
 
   return (
-    <div className="section-container p-6">
+    <div className="section-container">
       {/* Title */}
-      <h1 className="text-6xl lg:pb-20">Projects</h1>
+      <h1 className="text-6xl pb-10 md:pb-0 lg:pb-20">Projects</h1>
 
       <div className="flex flex-col md:flex-row items-center">
 
@@ -27,21 +27,21 @@ const Project1 = () => {
       <div className="hidden 2xl:block 2xl:w-1/6"></div> 
 
         {/* Project Text */}
-        <div className="project-text w-full md:w-1/2  xl:w-1/2  2xl:w-[40%]  ">
-          <h1 className="text-3xl font-bold mb-4 text-left 2xl:text-6xl">LoveTravel App</h1>
+        <div className="project-text w-full md:w-1/2  xl:w-1/2  2xl:w-[40%] pb-3 ">
+          <h1 className="text-3xl  font-bold mb-4 text-left 2xl:text-6xl">LoveTravel App</h1>
 
           <div className="flex flex-col space-y-2 text-left">
-            <p className="2xl:text-4xl">
+            <p className="2xl:text-2xl">
               Search your countries. Save your pictures.<br/> Create and print your
               personalized World map.
             </p>
             <br />
-            <div className="app-features text-left 2xl:text-4xl">
-              <p className="font-bold 2xl:text-4xl"> • Full-stack app</p>
-              <p className="2xl:text-4xl"> • SQL Database</p>
-              <p  className="2xl:text-4xl" > • RESTFUL API</p>
-              <p  className="2xl:text-4xl"  > • PDF Generator</p>
-              <p  className="2xl:text-4xl"  > • SVG</p>
+            <div className="app-features text-left 2xl:text-2xl">
+              <p className="font-bold 2xl:text-2xl"> • Full-stack app</p>
+              <p className="2xl:text-2xl"> • SQL Database</p>
+              <p  className="2xl:text-2xl" > • RESTFUL API</p>
+              <p  className="2xl:text-2xl"  > • PDF Generator</p>
+              <p  className="2xl:text-2xl"  > • SVG</p>
             </div>
             <br />
           </div>
@@ -82,13 +82,13 @@ const Project1 = () => {
             <img
               src={Img2}
               alt="Image Map"
-              className="w-[100%]  pr-3 z-10 relative transition-transform duration-500 ease-in-out hover:scale-110 hover:z-40"
+              className=" w-[90%] md:w-[100%]  pr-3 z-10 relative transition-transform duration-500 ease-in-out hover:scale-110 hover:z-40"
             />
             {/* Phone Image */}
             <img
               src={Img1}
               alt="Image Mobile"
-              className="absolute w-[60%] 2xl:w-[50%] -bottom-16 md:ml-10 -left-36 -ml-16 2xl:mt-16 2xl:-left-144 transform z-20 transition-transform duration-500 ease-in-out hover:scale-125 hover:z-50"
+              className="absolute w-52 md:w-[60%] 2xl:w-[50%] -bottom-6 md:ml-10 left-60 md:-left-36 -ml-16 2xl:mt-8 2xl:-left-96 transform z-20 transition-transform duration-500 ease-in-out hover:scale-125 hover:z-50"
             />
           </div>
         </div>

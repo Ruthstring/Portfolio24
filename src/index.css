@@ -228,7 +228,7 @@ h3{
 .project-media {
   position: relative;
   width: 100%;
-  height: 100%;
+
 }
 
 .project-img {
@@ -250,33 +250,28 @@ h3{
 /* Ensure the container spans the full width of the screen */
 .carousel-container {
   width: 100vw;
+ 
   overflow: hidden;
   white-space: nowrap;
   position: relative;
 }
 
-/* Style the scrolling text */
-.carousel-container {
-  width: 100vw;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
+
+
 
 /* Style the scrolling text */
 .carousel-text {
   font-family: "kooka-light-expanded";
   display: inline-block;
   text-transform: uppercase;
-  font-size: 3.5rem;
   font-weight: bold;
   white-space: nowrap;
-  margin-top: 50px;
-  animation: scroll-text 60s linear infinite;
+ 
+  animation: scroll-text 200s linear infinite;
   letter-spacing: 0.1rem;
   color: #d5d8db;
   /* Repeat the text to ensure it fills the space */
-  width: max-content; /* Ensures the text can overflow beyond container */
+  width: max-content; 
 }
 
 /* Keyframes for the scrolling animation */

@@ -25,7 +25,7 @@ export default {
           '128': '32rem',  // 512px
           '144': '36rem',  // 576px
           '160': '40rem',  // 640px
-          // Add more as needed
+          
         }
 
       },
