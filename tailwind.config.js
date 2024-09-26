@@ -19,9 +19,14 @@ export default {
         boxShadow: {
           'custom-blue': '0 4px 6px #8290f0',
           'custom-pink': '0 4px 6px #e6affc',
-          
-          
+           
         },
+        spacing: {
+          '128': '32rem',  // 512px
+          '144': '36rem',  // 576px
+          '160': '40rem',  // 640px
+          // Add more as needed
+        }
 
       },
     },

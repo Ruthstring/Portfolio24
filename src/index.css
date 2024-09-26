@@ -65,6 +65,9 @@ p{
 }
 
 /*NAVBAR*/
+.contact-btn:hover{
+background-color: #8290f0;
+}
 .nav-bar{
   background-color: #d5d8db;
 }
@@ -153,7 +156,8 @@ text {
 .tech-title{
   margin-top: 3%;
   font-weight: bold;
-  font-size:50px;
+  font-size:30px;
+  text-align: start;
 }
 .container {
   perspective: 1000px;

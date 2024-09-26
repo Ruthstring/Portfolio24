@@ -45,7 +45,8 @@ const NavBar = ({ contactSectionRef }) => {
       <div ref={navbarRef} className="nav-bar container bg-primary mx-auto p-4 ">
         <div className="flex justify-between items-center">
           <div className="w-36 ml-5">
-            <img src="" alt="My logo" className="w-36" />
+            <p>Ruth Cuéllar</p>
+            {/* <img src="" alt="My logo" className="w-36" /> */}
           </div>
 
           {/* Hamburger Menu Button (Visible on small screens) */}
@@ -123,7 +124,7 @@ const NavBar = ({ contactSectionRef }) => {
       {/* Sticky Contact Button */}
       {!isNavVisible && isContactButtonVisible && (
         <button
-          className="fixed px-4 py-3 button-grey rounded-full text-lg z-50 transition-all duration-300 ease-in-out"
+          className="contact-btn fixed px-4 py-3 button-grey rounded-full text-lg font-bold z-50 transition-all duration-300 ease-in-out"
           style={{
             top: `${20 + scrollPosition * 0.1}px`, // Moves the button down with the scroll
             right: '39px',
