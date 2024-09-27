@@ -94,11 +94,14 @@ background-color: #8290f0;
 
 /*-------HERO SECTION---------*/
 
-
-.best-title{
-  font-family:"Kooka-light-expanded";
-  
+.best-title {
+  font-family: "Kooka-light-expanded"; /* Use your custom font */
+  font-size: 20vw;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 36px;
 }
+
 .hero-section {
   position: relative;
   height: 100vh; /* Full viewport height for the hero */
@@ -107,15 +110,15 @@ background-color: #8290f0;
   align-items: center;
   background-color: #d5d8db;
   text-align: center;
+  overflow: hidden; /* Ensures no overflow during animation */
 }
-
 
 .circular-text-container {
   position: absolute;
   bottom: 90px; /* Position it in the bottom-right corner */
   left: 40px;
-  width: 80px; 
-  height:80px;
+  width: 80px;
+ 
 }
 
 .circular-text-svg {
@@ -123,7 +126,7 @@ background-color: #8290f0;
   height: 100%;
   transform-origin: center;
   animation: rotate 6s infinite linear; /* Rotate the circular text */
-  fill: none; /*BY DEFAULT WAS BLACK*/
+  fill: none; /* Default was black */
 }
 
 @keyframes rotate {
@@ -135,22 +138,117 @@ background-color: #8290f0;
   }
 }
 
-.dot {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px; 
-  height: 10px;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 text {
   font-size: 0.95rem;
-  font-weight:bold;
+  font-weight: bold;
   letter-spacing: 2px;
   fill: #333;
 }
+
+/* Animation additions */
+
+/* Name reveal animation */
+.name-reveal {
+  animation: reveal-name 2s ease-in-out forwards;
+}
+
+@keyframes reveal-name {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Junior text styling */
+.junior-text h2 {
+  font-size: 4rem;
+  font-family: "Kooka-light-expanded";
+  color: #333;
+  text-align: center;
+}
+
+.junior-r-letter {
+  color: #ff0000; /* Color for "R" in "YOUR JUNIOR" */
+}
+
+.hero-animation .hello-text {
+  color: #333;
+  font-size: 4rem;
+  font-family: "Kooka-light-expanded";
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.name {
+  display: inline-block;
+  margin-left: 10px;
+  letter-spacing: 0.1em;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  width: 83.33%; /* Adjust as needed */
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    width: 50%; /* Adjust for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-img {
+    width: 33.33%; /* Adjust for large screens */
+  }
+}
+/* Fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.name-reveal span {
+  opacity: 0;
+  display: inline-block;
+  justify-items: center;
+  animation: letterPop 0.5s forwards;
+  color:#8290f0;
+}
+
+.surname span{
+  display:inline-block;
+  
+}
+
+/* Example keyframes for letter pop in */
+@keyframes letterPop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 
 /*-------TECNOLOGIES---------*/
