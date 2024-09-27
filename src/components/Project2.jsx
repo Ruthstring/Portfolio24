@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import GitHub_logo from "../assets/github_logo.png"
 import Link_logo from "../assets/Link_logo.png"
-import Img2 from "../assets/mobil_proj2.png"
-import Img1 from "../assets/laptop_proj2.png"
-import Img3 from "../assets/tablet_proj2.png"
+import Img2 from "../assets/mobil_proj2.svg"
+import Img1 from "../assets/laptop_proj2.svg"
+import Img3 from "../assets/tablet_proj2.svg"
 
 
 const Project2 = () => {
@@ -22,14 +22,14 @@ const Project2 = () => {
   };
 
   return (
-    <div className="section-container flex flex-col md:flex-row space-y-10  md:space-y-0 lg:mt-40 ">
+    <div className="section-container flex flex-col md:flex-row space-y-10  md:space-y-0 lg:mt-30 ">
       
       {/* Empty Column for 2XL Screens */}
       <div className="hidden 2xl:block 2xl:w-1/6"></div>
 
       {/* Text Section */}
-      <div className="project-text w-full md:w-1/3 2xl:w-[40%] h-auto 2xl:pt-28 ">
-        <h1 className="lg:absolute text-3xl 2xl:text-6xl font-bold mb-4 text-left lg:ml-4">
+      <div className="project-text w-full md:w-1/3 2xl:w-[40%] h-auto 2xl:pt-28 xl:pt-12">
+        <h1 className="lg:absolute text-3xl 2xl:text-6xl font-bold mb-4 text-left lg:ml-4 ">
           Donut e-commerce
         </h1>
 
@@ -93,15 +93,16 @@ const Project2 = () => {
               key={index}
               src={image.src}
               alt={image.alt}
-              className={`absolute 2xl:-ml-128 transition-transform transform duration-1000 ease-in-out
-                 ${isActive ? "scale-125 z-30" : "opacity-50"}
-                 ${isLeft ? "translate-x-[-100px] md:translate-x-[-150px] lg:translate-x-[-250px] xl:translate-x-[-220px] 2xl:translate-x-[-350px] z-20" : ""}
-                 ${isRight ? "translate-x-[100px] md:translate-x-[150px] lg:translate-x-[250px] xl:translate-x-[220px] 2xl:translate-x-[350px] z-20" : ""}
+              className={`absolute 2xl:-ml-128 lg:-mt-96 xl:mt-2 transition-transform transform duration-1000 ease-in-out
+                 ${isActive ? "scale-110 z-30" : "opacity-50"}
+                 ${isLeft ? "translate-x-[-100px] md:translate-x-[-120px] lg:translate-x-[-200px] xl:translate-x-[-220px] 2xl:translate-x-[-350px] z-20" : ""}
+                 ${isRight ? "translate-x-[100px] md:translate-x-[120px] lg:translate-x-[200px] xl:translate-x-[220px] 2xl:translate-x-[350px] z-20" : ""}
               `}
               style={{
                 width: isActive ? "50%" : "40%",
                 maxHeight: "80vh", 
                 cursor: "pointer",
+                objectFit: "cover",
               }}
               onMouseEnter={() => handleHover(index)}
             />

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import GitHub_logo from "../assets/github_logo.png"
 import Link_logo from "../assets/Link_logo.png"
-import Img1 from "../assets/mobil_project1.png"
-import Img2 from "../assets/map_project1.png"
+import Img1 from "../assets/mobil_project1.svg"
+import Img2 from "../assets/map_project1.svg"
 
 const Project1 = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -19,7 +19,7 @@ const Project1 = () => {
   return (
     <div className="section-container">
       {/* Title */}
-      <h1 className="text-6xl pb-10 md:pb-0 lg:pb-20">Projects</h1>
+      <h1 className="text-6xl pb-10 md:pb-0 ">Projects</h1>
 
       <div className="flex flex-col md:flex-row items-center">
 
@@ -88,7 +88,7 @@ const Project1 = () => {
             <img
               src={Img1}
               alt="Image Mobile"
-              className="absolute w-52 md:w-[60%] 2xl:w-[50%] -bottom-6 md:ml-10 left-60 md:-left-36 -ml-16 2xl:mt-8 2xl:-left-96 transform z-20 transition-transform duration-500 ease-in-out hover:scale-125 hover:z-50"
+              className="absolute w-52 md:w-[60%] 2xl:w-[50%] -bottom-6 md:ml-10 left-60 md:-left-36 -ml-16 2xl:mt-8 lg:pb-28 2xl:pb-48 2xl:-left-96 transform z-20 transition-transform duration-500 ease-in-out hover:scale-125 hover:z-50"
             />
           </div>
         </div>
