@@ -16,7 +16,7 @@ const Hero=()=>{
             <img src={HeroImg}  className=" hero-img absolute bottom-0 w-5/6 md:w-1/2 lg:w-2/6 "/>
 
              {/* Circular text in the bottom-right corner */}
-                <div className="circular-text-container">
+                <div className="circular-text-container hidden md:block md:-mb-16 md:w-[60px] md:ml-10  xl:w-[70px] xl:ml-6 xl:-mb-14 2xl:ml-20">
                   <svg viewBox="0 0 100 100" className="circular-text-svg">
                     <path
                       id="circlePath"
