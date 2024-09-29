@@ -26,7 +26,11 @@ export default {
           '144': '36rem',  // 576px
           '160': '40rem',  // 640px
           
-        }
+        },
+        fontSize: {
+          '10xl': '12rem', 
+          '11xl': '18rem', 
+        },
 
       },
     },

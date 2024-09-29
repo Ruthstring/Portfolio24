@@ -141,7 +141,7 @@ background-color: #8290f0;
 
 
 text {
-  font-size: 0.95rem;
+  /* font-size: 0.95rem; */
   font-weight: bold;
   letter-spacing: 2px;
   fill: #333;
@@ -167,19 +167,17 @@ text {
 
 /* Junior text styling */
 .junior-text h2 {
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-family: "Kooka-light-expanded";
   color: #333;
   text-align: center;
 }
 
-.junior-r-letter {
-  color: #ff0000; /* Color for "R" in "YOUR JUNIOR" */
-}
+
 
 .hero-animation .hello-text {
   color: #333;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   font-family: "Kooka-light-expanded";
   text-align: center;
   text-transform: uppercase;
@@ -195,19 +193,19 @@ text {
 .hero-img {
   position: absolute;
   bottom: 0;
-  width: 83.33%; /* Adjust as needed */
+  width: 83.33%; 
   z-index: 1;
 }
 
 @media (min-width: 768px) {
   .hero-img {
-    width: 50%; /* Adjust for medium screens */
+    width: 50%; /*  medium screens */
   }
 }
 
 @media (min-width: 1024px) {
   .hero-img {
-    width: 33.33%; /* Adjust for large screens */
+    width: 33.33%; /* large screens */
   }
 }
 /* Fade-out animation */
@@ -250,6 +248,43 @@ text {
 }
 
 
+/* Sliding down for Web Developer text */
+.sliding-down {
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: slideDown 1.5s ease-out forwards;
+}
+
+/* Sliding up for Hero Image */
+.sliding-up {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+/* Keyframe animation for sliding down */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframe animation for sliding up */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*-------TECNOLOGIES---------*/
 .tech-title{
