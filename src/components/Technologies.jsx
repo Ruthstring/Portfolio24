@@ -13,7 +13,7 @@ import Img_Bento_tailwind from "../assets/bento_tailwind.png"
 const Technologies = () => {
   return (
     <>
-     <h1 className="tech-title xl:ml-28 xl:text-5xl xl:pb-2"> Technologies </h1>
+     <h1 className="tech-title ml-3 md:ml-28 xl:text-5xl xl:pb-2"> Technologies </h1>
       <div className="container flex h-screen bg-primary items-center justify-center">
         {/* Grid Layout */}
         <div className="grid h-full w-full gap-4 p-2 md:p-4 lg:p-6 md:ml-20 md:mr-20 lg:ml-32 lg:mr-32 ml-3 mr-3
