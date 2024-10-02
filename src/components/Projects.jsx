@@ -6,7 +6,7 @@ const Projects =()=>{
     return(
         <>
         
-        <div className="container pt-20">
+        <div className="container pt-20 xl:pt-3">
            
         <Project1 />
         </div>

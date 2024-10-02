@@ -4,9 +4,23 @@
 
 
 @font-face {
-  font-family: 'Kooka-light-expanded'; /* Replace with the name of your font */
+  font-family: 'Kooka-light-expanded'; 
   src: url('./assets/fonts/kooka-light-expanded.ttf') format('truetype');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMachina-Regular'; 
+  src: url('./assets/fonts/NeueMachina-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueMachina-Ultrabold'; 
+  src: url('./assets/fonts/NeueMachina-Ultrabold.otf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -43,6 +57,11 @@ h1{
 
 p{
   font-size: 20px;
+}
+
+.app-features p {
+  margin-left: 0.75em;
+  text-indent: -0.75em; /* Pulls back the first line so the bullet stays in place */
 }
 
 .container{
@@ -292,6 +311,7 @@ text {
   font-weight: bold;
   font-size:30px;
   text-align: start;
+  font-family: "NeueMachina-Regular";
 }
 .container {
   perspective: 1000px;
@@ -359,6 +379,12 @@ h3{
   
 
 /*--------PROJECT1--------*/
+
+.projects-title{
+  font-family: "NeueMachina-Regular";
+  font-weight: bold;
+
+}
 .project-media {
   position: relative;
   width: 100%;
@@ -554,6 +580,107 @@ h3{
   margin-right: 10px;
 }
 
-.contact-icon{
+
+
+/*ABOUT*/
+/* .about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+} */
+
+.about-grid {
+  display: grid;
+   height: 100vh; 
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  gap: 1rem;
+
+  padding: 1rem;
+  margin-top:6rem;
   
+}
+
+
+.title {
+  font-family:"NeueMachina-UltraBold";
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  color: #96a3fa;
+  font-size: 4.2rem;
+
+  line-height: 1;
+  justify-self: end;
+  align-self: end;
+}
+
+.intro-text {
+  grid-column: 5 / 13;
+  grid-row: 1/ 2;
+  font-size: 1.5rem;
+  font-weight: bold;
+ align-self: end;
+}
+.icon4 {
+grid-column:10/10;
+grid-row:2/5;
+/* width: 7rem; */
+}
+
+/* .icons {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-column:1/5;
+ grid-row:2/6; 
+}  */
+
+.icon1 {
+grid-column:3/3;
+grid-row: 2/2;
+margin-top: 10px;
+align-self: center;
+
+
+
+}
+
+.icon2 {
+  grid-column: 4/4 ;
+  grid-row: 2/2;
+  align-self: end;
+  margin-right: 10px;
+}
+
+.icon3 {
+  grid-column: 3/3;
+  grid-row:2/2;
+  width: 7rem;
+  justify-self: end;
+}
+
+
+/* .icon1, .icon2, .icon3 {
+  width: 100px;
+  height: auto;
+  
+
+} */
+
+.skills {
+  grid-column: 5 / 9;
+  /* grid-row: 2 / 8; */
+  font-size: 1.25rem;
+  line-height: 1.5;
+ 
+}
+
+.footer-text {
+  grid-column: 3 / 10;
+  grid-row: 3 / 10;
+  text-align: end;
+  font-size: 1rem;
+  margin-top: 1rem;
 }

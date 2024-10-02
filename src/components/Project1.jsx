@@ -19,7 +19,7 @@ const Project1 = () => {
   return (
     <div className="section-container">
       {/* Title */}
-      <h1 className="text-6xl pb-10 md:pb-0 ">Projects</h1>
+      <h1 className=" text-left projects-title xl:text-5xl pb-10 md:pb-0 xl:ml-12 ">Projects</h1>
 
       <div className="flex flex-col md:flex-row items-center">
 
@@ -27,21 +27,21 @@ const Project1 = () => {
       <div className="hidden 2xl:block 2xl:w-1/6"></div> 
 
         {/* Project Text */}
-        <div className="project-text w-full md:w-1/2  xl:w-1/2  2xl:w-[40%] pb-3 ">
-          <h1 className="text-3xl  font-bold mb-4 text-left 2xl:text-6xl">LoveTravel App</h1>
+        <div className="project-text w-full md:w-1/2  xl:w-1/2  2xl:w-[40%] pb-3 md:mr-10  xl:ml-12 xl:mr-6 ">
+          <h1 className="text-3xl xl:mt-20  font-bold mb-4 text-left 2xl:text-6xl">LoveTravel App</h1>
 
           <div className="flex flex-col space-y-2 text-left">
-            <p className="2xl:text-2xl">
-              Search your countries. Save your pictures.<br/> Create and print your
-              personalized World map.
+            <p className="md:text-sm xl:text-lg 2xl:text-2xl xl:leading-6 xl:mr-6 ">
+            This app allows users to search for countries, getting their Alpha codes from an API and filtering them, ensuring no duplicates are added to their profiles. Users can also store and update images, and change country categories dynamically, with all updates reflected in real-time within the database. <br /> One of the standout features is the ability to create a personalized world map using a color picker, allowing users to customize country colors. These customizations can be saved, and users can download their maps as PDF files for offline use.
+              
             </p>
             <br />
             <div className="app-features text-left 2xl:text-2xl">
-              <p className="font-bold 2xl:text-2xl"> • Full-stack app</p>
-              <p className="2xl:text-2xl"> • SQL Database</p>
-              <p  className="2xl:text-2xl" > • RESTFUL API</p>
-              <p  className="2xl:text-2xl"  > • PDF Generator</p>
-              <p  className="2xl:text-2xl"  > • SVG</p>
+              <p className="md:text-sm font-bold xl:text-lg 2xl:text-2xl"> • Full-stack application  </p>
+              <p className="md:text-sm xl:text-lg 2xl:text-2xl"> • <span className="font-bold">SQL Database </span></p>
+              <p  className="md:text-sm xl:text-lg 2xl:text-2xl" > • <span className="font-bold">RESTful API </span> </p>
+              <p  className="md:text-sm xl:text-lg  2xl:text-2xl"  > •  Integrated <span className="font-bold">PDF generator</span> for exporting custom maps</p>
+              <p  className="md:text-sm xl:text-lg  2xl:text-2xl"  > • <span className="font-bold">SVG integration </span>  for dynamic and interactive map rendering</p>
             </div>
             <br />
           </div>
@@ -56,7 +56,7 @@ const Project1 = () => {
             >
               <img
                 src={GitHub_logo}
-                className="max-w-[50px] max-h-[50px] 2xl:w-[70px] hover:shadow-custom-pink hover:rounded-full hover:scale-110"
+                className="max-w-[50px] max-h-[50px] xl:w-[45px] 2xl:w-[70px] hover:shadow-custom-blue hover:rounded-full hover:scale-110"
                 alt="GitHub Logo"
               />
             </a>
@@ -68,7 +68,7 @@ const Project1 = () => {
             >
               <img
                 src={Link_logo}
-                className="max-w-[50px] max-h-[50px] hover:shadow-custom-blue hover:rounded-full hover:scale-110 "
+                className="max-w-[50px] max-h-[50px] xl:w-[45px] hover:shadow-custom-blue hover:rounded-full hover:scale-110 "
                 alt="Link Logo"
               />
             </a>
@@ -76,7 +76,7 @@ const Project1 = () => {
         </div>
 
         {/* Image Section for Medium and Large Screens */}
-        <div className="w-full md:w-1/2 mt-8 relative">
+        <div className="w-full md:w-3/5 lg:w-1/2 md:-mt-56  lg:mt-3 relative ">
           <div className="relative w-full h-auto">
             {/* Map Image */}
             <img

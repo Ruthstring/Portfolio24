@@ -49,7 +49,7 @@ const NavBar = ({ contactSectionRef }) => {
       <div ref={navbarRef} className="nav-bar container bg-primary mx-auto p-4">
         <div className="flex justify-between items-center">
           <div className="w-36 ml-5">
-            <p>Ruth Cuéllar</p>
+            <p className="xl:ml-8">Ruth Cuéllar</p>
             {/* <img src="" alt="My logo" className="w-36" /> */}
           </div>
 

@@ -65,7 +65,7 @@ const Hero = () => {
       {/* Second Animation: "YOUR JUNIOR" */}
       {showJuniorText && !showFullStackText && (
         <div className="junior-text absolute inset-0 flex items-center justify-center">
-          <h2 className="text-white text-5xl lg:text-11xl 2xl:text-9xl font-bold">
+          <h2 className="text-white text-5xl lg:text-6xl 2xl:text-9xl font-bold">
             YOUR <br/>
             JUNIOR
           </h2>
