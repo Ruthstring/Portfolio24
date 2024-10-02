@@ -23,7 +23,7 @@ const About = () => {
           <div className="intro-text">
             <p className="text-left md:text-[30px] 2xl:text-[40px] leading-10 ">A hands-on, solution oriented professional.<br/> Willing to keep growing.</p>
           </div>
-          <div className="icon4" > <img  src={Icon4} /></div>
+          <div className="icon4 col-start-1" > <img  src={Icon4} /></div>
           {/* <div className="icons "> */}
             <div className="icon1 "><img className="" src={Icon1} /></div>
             <div className="icon2"><img src={Icon2} /> </div>

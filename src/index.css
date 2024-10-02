@@ -638,10 +638,11 @@ grid-row:2/5;
 }  */
 
 .icon1 {
-grid-column:3/3;
+grid-column:2/3;
 grid-row: 2/2;
-margin-top: 10px;
+margin-top: 2.5rem;
 align-self: center;
+width: 7rem;
 
 
 
@@ -652,6 +653,8 @@ align-self: center;
   grid-row: 2/2;
   align-self: end;
   margin-right: 10px;
+  width: 7rem;
+  
 }
 
 .icon3 {
