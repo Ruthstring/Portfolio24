@@ -594,7 +594,7 @@ h3{
   background-color: #f0f0f0;
 } */
 
-.about-grid {
+/* .about-grid {
   display: grid;
    height: 100vh; 
   grid-template-columns: repeat(12, 1fr);
@@ -604,13 +604,13 @@ h3{
   padding: 1rem;
   margin-top:6rem;
   
-}
+} */
 
 
 .title {
   font-family:"NeueMachina-UltraBold";
-  grid-column: 1 / 5;
-  grid-row: 1 / 2;
+  /* grid-column: 1 / 5;
+  grid-row: 1 / 2; */
   color: #96a3fa;
   font-size: 4.2rem;
 
@@ -620,17 +620,18 @@ h3{
 }
 
 .intro-text {
-  grid-column: 5 / 13;
-  grid-row: 1/ 2;
+  /* grid-column: 5 / 13;
+  grid-row: 1/ 2; */
   font-size: 1.5rem;
   font-weight: bold;
  align-self: end;
 }
-.icon4 {
-grid-column:10/10;
-grid-row:2/5;
-/* width: 7rem; */
+
+
+.icons{
+  width: 4.1rem;
 }
+
 
 /* .icons {
   display:grid;
@@ -641,29 +642,29 @@ grid-row:2/5;
 }  */
 
 .icon1 {
-grid-column:2/3;
-grid-row: 2/2;
-margin-top: 2.5rem;
+/* grid-column:2/3;
+grid-row: 2/2; */
+/* margin-top: 2.5rem; */
 align-self: center;
-width: 7rem;
+/* width: 7rem; */
 
 
 
 }
 
 .icon2 {
-  grid-column: 4/4 ;
-  grid-row: 2/2;
+  /* grid-column: 4/4 ;
+  grid-row: 2/2; */
   align-self: end;
   margin-right: 10px;
-  width: 7rem;
+  /* width: 7rem; */
   
 }
 
 .icon3 {
-  grid-column: 3/3;
-  grid-row:2/2;
-  width: 7rem;
+  /* grid-column: 3/3;
+  grid-row:2/2; */
+  /* width: 7rem; */
   justify-self: end;
 }
 
@@ -676,7 +677,7 @@ width: 7rem;
 } */
 
 .skills {
-  grid-column: 5 / 9;
+  /* grid-column: 5 / 9; */
   /* grid-row: 2 / 8; */
   font-size: 1.25rem;
   line-height: 1.5;
@@ -684,8 +685,8 @@ width: 7rem;
 }
 
 .footer-text {
-  grid-column: 3 / 10;
-  grid-row: 3 / 10;
+  /* grid-column: 3 / 10;
+  grid-row: 3 / 10; */
   text-align: end;
   font-size: 1rem;
   margin-top: 1rem;
