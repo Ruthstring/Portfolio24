@@ -20,7 +20,7 @@ const Project1 = () => {
   return (
     <div className="section-container grid grid-cols-12">
       {/* Title */}
-      <h1 className="text-left projects-title col-span-12 xl:col-span-12 xl:col-start-1  text-4xl md:text-5xl pb-10 md:pb-0 lg:ml-[2em]">Projects</h1>
+      <h1 className="text-left projects-title col-span-12 xl:col-span-12 xl:col-start-1  text-4xl md:text-5xl pb-10 md:pb-0 lg:ml-[0.65em]">Projects</h1>
   
       {/* Main Content Grid */}
       <div className="col-span-12 xl:col-span-12 md:col-start-1 grid grid-cols-12 ">
@@ -28,10 +28,10 @@ const Project1 = () => {
         <div className="hidden 2xl:block 2xl:col-span-1"></div>
   
         {/* Project Text (first 4 columns) */}
-        <div className="project-text col-span-12 md:col-span-6 lg:col-span-5 pb-3 md:col-start-1 lg:ml-[2em] xl:mr-[4em]">
-          <h1 className="text-3xl xl:mt-20 font-bold mb-4 text-left 2xl:text-6xl">LoveTravel App</h1>
+        <div className="project-text col-span-12 md:col-span-6 lg:col-span-5 pb-3 md:col-start-1 lg:ml-[2em] xl:mr-[2em] 2xl:mr-[3.5em]">
+          <h1 className="text-3xl xl:mt-20 2xl:mt-32 font-bold mb-4 text-left 2xl:text-5xl">LoveTravel App</h1>
           <div className="flex flex-col text-left">
-            <p className="md:text-sm xl:text-lg 2xl:text-2xl xl:leading-6 2xl:leading-8">
+            <p className="md:text-sm xl:text-lg 2xl:text-2xl xl:leading-6 2xl:mt-10 2xl:leading-8 text-justify">
               This app allows users to search for countries, getting their Alpha codes from an API and filtering them, ensuring no duplicates are added to their profiles. Users can also store and update images, and change country categories dynamically, with all updates reflected in real-time within the database. <br /> One of the standout features is the ability to create a personalized world map using a color picker, allowing users to customize country colors. These customizations can be saved, and users can download their maps as PDF files for offline use.
             </p>
             <br />
@@ -65,7 +65,7 @@ const Project1 = () => {
         </div>
   
         {/* Image Section (next 6 columns) */}
-        <div className="w-full col-span-12 lg:-mt-12 xl:mt-12 md:col-span-5 md:ml-20 ml-5 lg:ml-[1.75em]  lg:col-start-7 2xl:col-start-8 xl:col-start-7 lg:col-span-6 2xl:col-span-5">
+        <div className="w-full col-span-12 lg:-mt-12 xl:mt-12 md:col-span-5 md:ml-20 ml-5 lg:ml-[0.75em]  lg:col-start-7 2xl:col-start-8 xl:col-start-7 lg:col-span-6 2xl:col-span-5">
           <div className="relative w-full h-auto">
             {/* Map Image */}
             <img

@@ -16,8 +16,8 @@ import Icon4 from "../assets/multi_iconAbout.svg"
 const About = () => {
     return (
       <div className="about-container">
-        <div className="about-grid h-screen">
-          <div className="title">
+        <div className="about-grid h-screen 2xl:h-[80vh] ">
+          <div className="title 2xl:pt-28">
             <h1 className="about-title text-right md:text-[100px]  2xl:text-[125px] leading-[100px]">ABOUT <br /> ME</h1>
           </div>
           <div className="intro-text">

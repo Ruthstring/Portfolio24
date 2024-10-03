@@ -25,24 +25,24 @@ const Project2 = () => {
   return (
     <div className="section-container grid grid-cols-12 gap-y-10 mb-28">
       {/* Main Content Grid */}
-      <div className="col-span-12 xl:col-span-12 md:col-start-1 grid grid-cols-12 grid-rows-[auto] gap-y-10">
+      <div className="col-span-12 xl:col-span-12 md:col-start-1 grid grid-cols-12 grid-rows-[auto] gap-y-10 2xl:ml-40">
         {/* Empty column for margins */}
         <div className="hidden 2xl:block 2xl:col-span-1"></div>
 
         {/* Text Section (first 4 columns on larger screens, full width on small screens) */}
-        <div className="project-text col-span-12 md:col-span-6 lg:col-span-5 lg:ml-[2.5em] xl:mr-[2em] xl:pt-12 2xl:pt-28 row-start-1">
-          <h1 className="text-3xl font-bold mb-4 text-left 2xl:text-6xl">Donut e-commerce</h1>
+        <div className="project-text col-span-12 md:col-span-6 lg:col-span-5 lg:ml-[2.5em] xl:mr-[2em] 2xl:mr-[0em] 2xl:ml-20 xl:pt-12 2xl:pt-28 row-start-1 ">
+          <h1 className="text-3xl font-bold mb-4 text-left 2xl:text-5xl">Donut e-commerce</h1>
 
           <div className="flex flex-col text-left">
-            <p className="md:text-sm xl:text-lg 2xl:text-2xl xl:leading-6 2xl:leading-8">
+            <p className="md:text-sm xl:text-lg 2xl:text-2xl xl:leading-6 2xl:leading-8 text-justify 2xl:mt-10  ">
               This online store application allows users to browse the menu, search for items by category, and add products to their shopping cart. Upon registering, users can access their personalized cart with product recommendations tailored to their preferences.
             </p>
             <br />
             <div className="app-features text-left 2xl:text-2xl">
               <p className="md:text-sm font-bold xl:text-lg 2xl:text-2xl"> • Full-stack app</p>
-              <p className="md:text-sm xl:text-lg 2xl:text-2xl"> • <span className="font-bold">noSql Database (MongoDB)</span> for scalable and flexible data storage</p>
-              <p className="md:text-sm xl:text-lg 2xl:text-2xl"> • State management powered by <span className="font-bold">Redux</span> for efficient and responsive user interaction</p>
-              <p className="md:text-sm xl:text-lg 2xl:text-2xl"> • <span className="font-bold">JWT</span> token-based authentication for secure user login and session management</p>
+              <p className="md:text-sm xl:text-lg 2xl:text-2xl text-justify"> • <span className="font-bold">noSql Database (MongoDB)</span> for scalable and flexible data storage</p>
+              <p className="md:text-sm xl:text-lg 2xl:text-2xl text-justify"> • State management powered by <span className="font-bold">Redux</span> for efficient and responsive user interaction</p>
+              <p className="md:text-sm xl:text-lg 2xl:text-2xl text-justify"> • <span className="font-bold">JWT</span> token-based authentication for secure user login and session management</p>
               <p className="md:text-sm xl:text-lg 2xl:text-2xl"> • Dynamic product recommendations and personalized shopping cart</p>
               <p className="md:text-sm xl:text-lg 2xl:text-2xl"> • Responsive Design</p>
             </div>

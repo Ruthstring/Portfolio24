@@ -449,7 +449,7 @@ h3{
 /*CONTACT*/
 
 .contact-section{
-  background-color: #d5d8db;
+ 
   margin-top: 3%;
   padding-top:3%;
 }
@@ -510,16 +510,18 @@ h3{
   transition: all 2.5s cubic-bezier(0.6, 0.05, 0.1, 0.9); 
  
 }
-/* Background image for "New Adventures" */
+
+.ready-text{
+  font-family: "NeueMachina-Regular";
+  font-weight: bolder;
+  padding-left: 2rem;
+}
+
 .bg-new-adventures {
-  background-color:white;
-  background-size: cover; /* Ensures the image covers the text */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  padding-left: 30px; 
-  padding-right: 30px;/* Padding to allow space around the text */
-  
-  color: white; /* Ensure text is visible */
+ 
+  padding-right: 30px;
+  /* padding-top:1.5rem; */
+ 
 }
 
 .text-animation-container{
@@ -538,19 +540,20 @@ h3{
   margin-top:5%;
   margin-bottom: 5%;
   border-radius: 3%;
-  background-color: #d5d8db;
+  /* background-color: #d5d8db; */
   
 }
 
 .contact-icon-column {
-  background-color:#ffe577;
+  background-color:#8796f8;
   position: relative;
-  padding: 20px;
+  padding-top: 40px;
+  padding-bottom:40px;
   border-radius: 3%;
 }
 
 .contact-title {
-  color: white;
+  color: #e5e7e8; 
   font-size: 3rem;
   font-weight: 900;
 }
@@ -563,7 +566,7 @@ h3{
   height: 0;
   border-top: 21px solid transparent;
   border-bottom: 50px solid transparent;
-  border-right: 40px solid #ffe577;
+  border-right: 40px solid #8796f8;
 }
 
 
@@ -580,7 +583,7 @@ h3{
   margin-right: 10px;
 }
 
-
+/*------ABOUT--------*/
 
 /*ABOUT*/
 /* .about-container {
