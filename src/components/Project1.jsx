@@ -18,7 +18,7 @@ const Project1 = () => {
   }, []);
 
   return (
-    <div className="section-container grid grid-cols-12">
+    <div id="projects" className="section-container grid grid-cols-12">
       {/* Title */}
       <h1 className="text-left projects-title col-span-12 xl:col-span-12 xl:col-start-1  text-4xl md:text-5xl pb-10 md:pb-0 lg:ml-[0.65em]">Projects</h1>
   
@@ -54,13 +54,13 @@ const Project1 = () => {
                 alt="GitHub Logo"
               />
             </a>
-            <a href="https://your-link.com" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://your-link.com" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">
               <img
                 src={Link_logo}
                 className="max-w-[50px] max-h-[50px] xl:w-[45px] hover:shadow-custom-blue hover:rounded-full hover:scale-110"
                 alt="Link Logo"
               />
-            </a>
+            </a> */}
           </div>
         </div>
   

@@ -64,7 +64,7 @@ const Project2 = () => {
               />
             </a>
             <a
-              href="https://your-link.com"
+              href="https://donutstore-e-commerce.netlify.app/"
               className="text-blue-500 underline"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Project2 = () => {
         </div>
 
         {/* Slider Section (full width on small screens, in columns on large screens) */}
-        <div className="project-media col-span-12 md:col-span-6 lg:col-span-6 2xl:col-span-7 flex justify-center items-center relative md:h-[100vh] xl:h-[100vh] 2xl:h-[60vh] row-start-2 md:row-start-1 mt-4 md:mt-24 2xl:-mt-10 lg:ml-[2em] 2xl:ml-[16rem]">
+        <div className="project-media col-span-12 md:col-span-6 lg:col-span-6 2xl:col-span-7 flex justify-center items-center relative md:h-[100vh] xl:h-[100vh] 2xl:h-[60vh] row-start-2 md:row-start-1 mt-14 md:mt-24 2xl:-mt-10 lg:ml-[2em] 2xl:ml-[16rem]">
           {/* Map through images and position them */}
           {images.map((image, index) => {
             const isActive = index === activeIndex;

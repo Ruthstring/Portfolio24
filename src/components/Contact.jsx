@@ -30,7 +30,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div ref={contactRef} className="h-screen 2xl:h-[80vh] container contact-section bg-gradient-to-t" style={{ background: 'linear-gradient(to bottom, #eff1f3, #8290f0)' }}  >
+    <div id="contact" ref={contactRef} className="h-screen 2xl:h-[80vh] container contact-section bg-gradient-to-t" style={{ background: 'linear-gradient(to bottom, #eff1f3, #8290f0)' }}  >
       {/* Grid Layout with Empty Columns for 2XL Screens */}
       <div className="flex flex-col md:grid md:grid-cols-2 2xl:grid-cols-12 w-full h-full">
         
