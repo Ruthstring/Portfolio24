@@ -3,6 +3,10 @@ export default {
       './index.html',
       './src/**/*.{js,ts,jsx,tsx}',
     ],
+
+    safelist: [
+      'md-landscape:mt-10'
+    ],
     theme: {
       extend: {
         colors: {
