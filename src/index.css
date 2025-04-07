@@ -659,6 +659,7 @@ align-self: center;
   align-self: end;
   margin-right: 10px;
   /* width: 7rem; */
+ 
   
 }
 
@@ -666,7 +667,7 @@ align-self: center;
   /* grid-column: 3/3;
   grid-row:2/2; */
   /* width: 7rem; */
-  justify-self: end;
+  align-self: end;
 }
 
 
