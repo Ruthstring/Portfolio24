@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div id="about" className="about-container pb-12">
       
-      <div className="about-grid grid grid-cols-5 md:grid-cols-12 grid-rows-auto md:grid-rows-auto h-screen max-h-[850px]  ">
+      <div className="about-grid grid grid-cols-5 md:grid-cols-12 grid-rows-auto md:grid-rows-auto max-h-[850px]  ">
 
         {/* Title Section */}
         <div className="title row-start-1 items-start col-span-5 md:col-start-2 md:col-span-4 2xl:pt-28">
