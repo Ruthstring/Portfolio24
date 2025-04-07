@@ -178,7 +178,7 @@ const Project2 = () => {
 	};
 
 	return (
-		<div className="ml-5 lg:ml-[0.75em] section-container grid grid-cols-12  md:-mb-10 2xl:mb-5">
+		<div className="ml-3 mr-3  md:ml-[0.75em] section-container grid grid-cols-12  md:-mb-10 2xl:mb-5">
 			{/* Main Content Grid */}
 			<div className="col-span-12 xl:col-span-12 md:col-start-1 grid grid-cols-12 grid-rows-[auto] gap-y-10 2xl:ml-40">
 				{/* Empty column for margins */}

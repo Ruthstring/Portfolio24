@@ -19,7 +19,7 @@ const Project1 = () => {
 	return (
 		<div id="projects" className="section-container grid grid-cols-12">
 			{/* Main Content Grid */}
-			<div className="col-span-12 xl:col-span-12 md:col-start-1 grid grid-cols-12 ">
+			<div className="ml-3 mr-3 col-span-12 xl:col-span-12 md:col-start-1 grid grid-cols-12 ">
 				{/* Empty column for margins */}
 				<div className="hidden 2xl:block 2xl:col-span-1"></div>
 

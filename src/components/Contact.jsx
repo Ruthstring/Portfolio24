@@ -38,7 +38,7 @@ const Contact = () => {
         <div className="hidden 2xl:block 2xl:col-span-2"></div>
         
         {/* Animation Section for 2XL Screens */}
-        <div className="text-animation-container   pt-10 md:pt-28 lg:col-span-1  2xl:col-span-5 flex flex-col items-start  relative 2xl:mt-10">
+        <div className="text-animation-container  pt-10 md:pt-28 lg:col-span-1  2xl:col-span-5 flex flex-col items-start  relative 2xl:mt-10">
           {showAnimation && (
             <h2 className={`ready-text transition-all duration-1000 text-[40px] md:text-[50px] text-6xl md:text-8xl xl:text-[60px] font-bold text-gray-500
               ${showAnimation ? 'final-position-ready slide-in-left' : 'initial-position'}`}>
@@ -48,7 +48,7 @@ const Contact = () => {
           {showAnimation && (
             <h2
             
-              className={`leading-[55px] mt-3 transition-all ready-text text-left font-bold text-[55px] mb-5 md:mt-0 md:text-[60px] xl:text-[90px] 2xl:text-[100px] 2xl:mt-2 2xl:pt-3 duration-1000 md:text-8xl  relative
+              className={`leading-[55px] mt-3 transition-all ready-text text-left font-bold text-[55px] mb-5 md:mt-0 md:text-[60px] xl:text-[85px] 2xl:text-[100px] 2xl:mt-2 2xl:pt-3 duration-1000 md:text-8xl  relative
                 ${showAnimation ? 'bg-new-adventures xl:pt-[1.5rem]  final-position-adventures slide-in-right scale-110' : 'initial-position'}`}>
               New Challenges
             </h2>
